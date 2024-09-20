@@ -9,8 +9,8 @@ public class databaseJ {
     
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/agriapp"; // db name
-        String user = "root"; // db username
-        String password = "Htp256@age"; // db password
+        String user = "BGCFBG"; // db username
+        String password = "HHGHNH"; // db password
 
         try {
             // Loading JDBC driver
