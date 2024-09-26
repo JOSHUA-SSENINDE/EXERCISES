@@ -1,13 +1,11 @@
 import java.util.*;
 
- // Compiler version JDK 11.0.2
-
- class Decoder
+ public class Location 
  {
    public static void main(String args[])
- 
+
    { 
-     
+
      int[][] matrix = {
        {1,2,3},
        {4,5,6},
