@@ -1,26 +1,26 @@
-import java.util.Scanner; // Import the Scanner class
+import java.util.Scanner; 
 
-public class password { // Class name should follow CamelCase convention
+public class password { 
 
     public static void main(String[] args) {
-        int attempts = 3; // Number of allowed attempts
-        Scanner scanner = new Scanner(System.in); // Create a Scanner object
+        int attempts = 3;
+        Scanner scanner = new Scanner(System.in); 
 
-        while (attempts > 0) { // Loop for password attempts
-            System.out.print("Enter password: "); // Prompt the user
+        while (attempts > 0) { 
+            System.out.print("Enter password: "); 
 
-            String password = scanner.next(); // Read the password
+            String password = scanner.next(); 
 
-            if (password.equals("correct_password")) { // Check if the password is correct
+            if (password.equals("correct_password")) { 
                 System.out.println("Access granted!");
-                break; // Exit the loop if the password is correct
+                break; 
             } else {
-                attempts--; // Decrement remaining attempts
+                attempts--; 
                 System.out.println("Incorrect password. You have " + attempts + " attempts remaining.");
             }
         }
 
-        if (attempts == 0) { // Handle failed attempts
+        if (attempts == 0) { 
             System.out.println("Sorry, you've run out of attempts.");
         }
     }
